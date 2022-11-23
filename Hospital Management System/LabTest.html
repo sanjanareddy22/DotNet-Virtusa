@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Book Lab Test</title>
+    </head>
+    <style>
+        body
+        {
+            background-color:lightblue
+        }
+        h3
+        {
+            color: purple;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table
+        {
+            margin-top: 100px;
+            display: flex;
+            margin-left: 400px;
+        }
+        input,select
+        {
+            width:400px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        button
+        {            
+            cursor: pointer;
+            width:400px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color:crimson;
+            color: aliceblue;
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <table align="center">
+            <form id="create">
+                <tr>
+                    <td><h3>BOOK YOUR TEST</h3></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Name*"></td>
+                </tr>    
+                <tr>
+                    <td><input type="text" placeholder="Email*"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Phone Number*"></td>
+                </tr>
+                <tr>
+                        <td><input type="text" placeholder="Test Name"></td>
+                </tr>
+                <tr>
+                        <td><div class="column"><input type="text" placeholder="Slot Booking Date"></td>
+                </tr>
+                <tr>
+                    <td><select name="state">
+                        <option value="" disabled selected hidden>Select State</option>
+                        <option value="Telangana" >Telangana</option>
+                        <option value="Tamilnadu">Tamil Nadu</option>
+                        <option value="Karnataka">Karanataka</option>
+                        <option value="Maharastra">Maharastra</option>    
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><select name="city">
+                        <option value="" disabled selected hidden>Select City</option>
+                        <option value="Hyderabad" >Hyderabad</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Mumbai">Mumbai</option>    
+                    </select></td>
+                </tr>
+                <tr><td><br></td></tr> 
+                <tr>
+                    <td><button type="submit" value="Submit" id="submit">SUBMIT</button></td>
+                </tr> 
+            </form>
+        </table>
+    </body>
+</html>
