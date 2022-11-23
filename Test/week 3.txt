@@ -1,0 +1,43 @@
+WAP to find permutations of a string.
+
+ip1: 
+abc
+
+op: 
+abc
+acb
+bac
+bca
+cab
+cba
+
+static void permute(String s,
+                    String ans)
+{   
+    if (s.Length == 0)
+    {
+        Console.WriteLine(ans + "  ");
+        return;
+    }
+      
+    for(int i = 0 ;i < s.Length; i++)
+    {
+        char ch = s[i];
+        String left_substr = s.Substring(0, i);
+        String right_substr = s.Substring(i + 1);
+        String rest = left_substr + right_substr;
+        permute(rest, ans + ch);
+    }
+}
+  
+   
+    String s;
+    String ans="";
+      
+    Console.Write("Enter the string : ");
+    s = Console.ReadLine();
+      
+    //Console.Write("\nAll possible strings are : ");
+    permute(s, ans);
+
+---------------------------------------------------------------------------------
